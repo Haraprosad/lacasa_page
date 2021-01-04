@@ -22,6 +22,7 @@ class _LacasaPageState extends State<LacasaPage> {
             Text("LACASA Offers",style: TextStyles.titleTextStyle,),
             SizedBox(height: 20,),
             firstBoxWidget(),
+            SizedBox(height: 15,),
             staggeredBoxWidget(),
           ],
         ),
@@ -43,7 +44,7 @@ class _LacasaPageState extends State<LacasaPage> {
   staggeredBoxWidget() {
     return Expanded(
       child: StaggeredGridView.countBuilder(
-        padding: EdgeInsets.only(top: 20),
+        padding: EdgeInsets.only(top: 5),
         crossAxisCount: 4,
         itemCount: 4,
         itemBuilder: (BuildContext context, int index){
